@@ -1,0 +1,169 @@
+# do ../modelsim_script.tcl
+# -vlog01compat
+# +define+SIMULATION
+# +incdir+../../../src
+# +incdir+../../../testbench
+# ../../../src/*.v
+# ../../../testbench/*.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:17:55 on Oct 15,2017
+# vlog -reportprogress 300 -vlog01compat "+define+SIMULATION" "+incdir+../../../src" "+incdir+../../../testbench" ../../../src/sm_cpu.v ../../../src/sm_hex_display.v ../../../src/sm_register.v ../../../src/sm_rom.v ../../../src/sm_top.v ../../../testbench/testbench.v 
+# -- Compiling module sm_cpu
+# -- Compiling module sm_control
+# -- Compiling module sm_alu
+# -- Compiling module sm_register_file
+# -- Compiling module sm_hex_display
+# -- Compiling module sm_hex_display_8
+# -- Compiling module sm_register
+# -- Compiling module sm_register_we
+# -- Compiling module sm_rom
+# -- Compiling module sm_top
+# -- Compiling module sm_metafilter
+# -- Compiling module sm_clk_divider
+# -- Compiling module sm_testbench
+# 
+# Top level modules:
+# 	sm_hex_display
+# 	sm_hex_display_8
+# 	sm_top
+# 	sm_testbench
+# End time: 16:17:55 on Oct 15,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.sm_testbench 
+# Start time: 16:17:55 on Oct 15,2017
+# Loading work.sm_testbench
+# Loading work.sm_rom
+# Loading work.sm_cpu
+# Loading work.sm_register
+# Loading work.sm_register_file
+# Loading work.sm_alu
+# Loading work.sm_control
+#     0  pc =  0  pcaddr = 00000000  instr = 24110000   v0 = 0   addiu $17, $0, 0
+#     1  pc =  0  pcaddr = 00000000  instr = 24110000   v0 = 0   addiu $17, $0, 0
+#     2  pc =  0  pcaddr = 00000000  instr = 24110000   v0 = 0   addiu $17, $0, 0
+#     3  pc =  0  pcaddr = 00000000  instr = 24110000   v0 = 0   addiu $17, $0, 0
+#     4  pc =  0  pcaddr = 00000000  instr = 24110000   v0 = 0   addiu $17, $0, 0
+#     5  pc =  1  pcaddr = 00000004  instr = 24100001   v0 = 0   addiu $16, $0, 1
+#     6  pc =  2  pcaddr = 00000008  instr = 24080028   v0 = 0   addiu $8, $0, 40
+#     7  pc =  3  pcaddr = 0000000c  instr = 240a0000   v0 = 0   addiu $10, $0, 0
+#     8  pc =  4  pcaddr = 00000010  instr = 0208482b   v0 = 0   sltu  $9, $16, $8
+#     9  pc =  5  pcaddr = 00000014  instr = 112a0005   v0 = 0   beq   $9, $10, 6
+#    10  pc =  6  pcaddr = 00000018  instr = 00000000   v0 = 0   nop
+#    11  pc =  7  pcaddr = 0000001c  instr = 02308821   v0 = 0   addu  $17, $17, $16
+#    12  pc =  8  pcaddr = 00000020  instr = 02108021   v0 = 0   addu  $16, $16, $16
+#    13  pc =  9  pcaddr = 00000024  instr = 1000fffa   v0 = 0   beq   $0, $0, -5
+#    14  pc =  4  pcaddr = 00000010  instr = 0208482b   v0 = 0   sltu  $9, $16, $8
+#    15  pc =  5  pcaddr = 00000014  instr = 112a0005   v0 = 0   beq   $9, $10, 6
+#    16  pc =  6  pcaddr = 00000018  instr = 00000000   v0 = 0   nop
+#    17  pc =  7  pcaddr = 0000001c  instr = 02308821   v0 = 0   addu  $17, $17, $16
+#    18  pc =  8  pcaddr = 00000020  instr = 02108021   v0 = 0   addu  $16, $16, $16
+#    19  pc =  9  pcaddr = 00000024  instr = 1000fffa   v0 = 0   beq   $0, $0, -5
+#    20  pc =  4  pcaddr = 00000010  instr = 0208482b   v0 = 0   sltu  $9, $16, $8
+#    21  pc =  5  pcaddr = 00000014  instr = 112a0005   v0 = 0   beq   $9, $10, 6
+#    22  pc =  6  pcaddr = 00000018  instr = 00000000   v0 = 0   nop
+#    23  pc =  7  pcaddr = 0000001c  instr = 02308821   v0 = 0   addu  $17, $17, $16
+#    24  pc =  8  pcaddr = 00000020  instr = 02108021   v0 = 0   addu  $16, $16, $16
+#    25  pc =  9  pcaddr = 00000024  instr = 1000fffa   v0 = 0   beq   $0, $0, -5
+#    26  pc =  4  pcaddr = 00000010  instr = 0208482b   v0 = 0   sltu  $9, $16, $8
+#    27  pc =  5  pcaddr = 00000014  instr = 112a0005   v0 = 0   beq   $9, $10, 6
+#    28  pc =  6  pcaddr = 00000018  instr = 00000000   v0 = 0   nop
+#    29  pc =  7  pcaddr = 0000001c  instr = 02308821   v0 = 0   addu  $17, $17, $16
+#    30  pc =  8  pcaddr = 00000020  instr = 02108021   v0 = 0   addu  $16, $16, $16
+#    31  pc =  9  pcaddr = 00000024  instr = 1000fffa   v0 = 0   beq   $0, $0, -5
+#    32  pc =  4  pcaddr = 00000010  instr = 0208482b   v0 = 0   sltu  $9, $16, $8
+#    33  pc =  5  pcaddr = 00000014  instr = 112a0005   v0 = 0   beq   $9, $10, 6
+#    34  pc =  6  pcaddr = 00000018  instr = 00000000   v0 = 0   nop
+#    35  pc =  7  pcaddr = 0000001c  instr = 02308821   v0 = 0   addu  $17, $17, $16
+#    36  pc =  8  pcaddr = 00000020  instr = 02108021   v0 = 0   addu  $16, $16, $16
+#    37  pc =  9  pcaddr = 00000024  instr = 1000fffa   v0 = 0   beq   $0, $0, -5
+#    38  pc =  4  pcaddr = 00000010  instr = 0208482b   v0 = 0   sltu  $9, $16, $8
+#    39  pc =  5  pcaddr = 00000014  instr = 112a0005   v0 = 0   beq   $9, $10, 6
+#    40  pc =  6  pcaddr = 00000018  instr = 00000000   v0 = 0   nop
+#    41  pc =  7  pcaddr = 0000001c  instr = 02308821   v0 = 0   addu  $17, $17, $16
+#    42  pc =  8  pcaddr = 00000020  instr = 02108021   v0 = 0   addu  $16, $16, $16
+#    43  pc =  9  pcaddr = 00000024  instr = 1000fffa   v0 = 0   beq   $0, $0, -5
+#    44  pc =  4  pcaddr = 00000010  instr = 0208482b   v0 = 0   sltu  $9, $16, $8
+#    45  pc =  5  pcaddr = 00000014  instr = 112a0005   v0 = 0   beq   $9, $10, 6
+#    46  pc = 11  pcaddr = 0000002c  instr = xxxxxxxx   v0 = 0   new/unknown
+#    47  pc = 12  pcaddr = 00000030  instr = xxxxxxxx   v0 = 0   new/unknown
+#    48  pc = 13  pcaddr = 00000034  instr = xxxxxxxx   v0 = 0   new/unknown
+#    49  pc = 14  pcaddr = 00000038  instr = xxxxxxxx   v0 = 0   new/unknown
+#    50  pc = 15  pcaddr = 0000003c  instr = xxxxxxxx   v0 = 0   new/unknown
+#    51  pc = 16  pcaddr = 00000040  instr = xxxxxxxx   v0 = 0   new/unknown
+#    52  pc = 17  pcaddr = 00000044  instr = xxxxxxxx   v0 = 0   new/unknown
+#    53  pc = 18  pcaddr = 00000048  instr = xxxxxxxx   v0 = 0   new/unknown
+#    54  pc = 19  pcaddr = 0000004c  instr = xxxxxxxx   v0 = 0   new/unknown
+#    55  pc = 20  pcaddr = 00000050  instr = xxxxxxxx   v0 = 0   new/unknown
+#    56  pc = 21  pcaddr = 00000054  instr = xxxxxxxx   v0 = 0   new/unknown
+#    57  pc = 22  pcaddr = 00000058  instr = xxxxxxxx   v0 = 0   new/unknown
+#    58  pc = 23  pcaddr = 0000005c  instr = xxxxxxxx   v0 = 0   new/unknown
+#    59  pc = 24  pcaddr = 00000060  instr = xxxxxxxx   v0 = 0   new/unknown
+#    60  pc = 25  pcaddr = 00000064  instr = xxxxxxxx   v0 = 0   new/unknown
+#    61  pc = 26  pcaddr = 00000068  instr = xxxxxxxx   v0 = 0   new/unknown
+#    62  pc = 27  pcaddr = 0000006c  instr = xxxxxxxx   v0 = 0   new/unknown
+#    63  pc = 28  pcaddr = 00000070  instr = xxxxxxxx   v0 = 0   new/unknown
+#    64  pc = 29  pcaddr = 00000074  instr = xxxxxxxx   v0 = 0   new/unknown
+#    65  pc = 30  pcaddr = 00000078  instr = xxxxxxxx   v0 = 0   new/unknown
+#    66  pc = 31  pcaddr = 0000007c  instr = xxxxxxxx   v0 = 0   new/unknown
+#    67  pc = 32  pcaddr = 00000080  instr = xxxxxxxx   v0 = 0   new/unknown
+#    68  pc = 33  pcaddr = 00000084  instr = xxxxxxxx   v0 = 0   new/unknown
+#    69  pc = 34  pcaddr = 00000088  instr = xxxxxxxx   v0 = 0   new/unknown
+#    70  pc = 35  pcaddr = 0000008c  instr = xxxxxxxx   v0 = 0   new/unknown
+#    71  pc = 36  pcaddr = 00000090  instr = xxxxxxxx   v0 = 0   new/unknown
+#    72  pc = 37  pcaddr = 00000094  instr = xxxxxxxx   v0 = 0   new/unknown
+#    73  pc = 38  pcaddr = 00000098  instr = xxxxxxxx   v0 = 0   new/unknown
+#    74  pc = 39  pcaddr = 0000009c  instr = xxxxxxxx   v0 = 0   new/unknown
+#    75  pc = 40  pcaddr = 000000a0  instr = xxxxxxxx   v0 = 0   new/unknown
+#    76  pc = 41  pcaddr = 000000a4  instr = xxxxxxxx   v0 = 0   new/unknown
+#    77  pc = 42  pcaddr = 000000a8  instr = xxxxxxxx   v0 = 0   new/unknown
+#    78  pc = 43  pcaddr = 000000ac  instr = xxxxxxxx   v0 = 0   new/unknown
+#    79  pc = 44  pcaddr = 000000b0  instr = xxxxxxxx   v0 = 0   new/unknown
+#    80  pc = 45  pcaddr = 000000b4  instr = xxxxxxxx   v0 = 0   new/unknown
+#    81  pc = 46  pcaddr = 000000b8  instr = xxxxxxxx   v0 = 0   new/unknown
+#    82  pc = 47  pcaddr = 000000bc  instr = xxxxxxxx   v0 = 0   new/unknown
+#    83  pc = 48  pcaddr = 000000c0  instr = xxxxxxxx   v0 = 0   new/unknown
+#    84  pc = 49  pcaddr = 000000c4  instr = xxxxxxxx   v0 = 0   new/unknown
+#    85  pc = 50  pcaddr = 000000c8  instr = xxxxxxxx   v0 = 0   new/unknown
+#    86  pc = 51  pcaddr = 000000cc  instr = xxxxxxxx   v0 = 0   new/unknown
+#    87  pc = 52  pcaddr = 000000d0  instr = xxxxxxxx   v0 = 0   new/unknown
+#    88  pc = 53  pcaddr = 000000d4  instr = xxxxxxxx   v0 = 0   new/unknown
+#    89  pc = 54  pcaddr = 000000d8  instr = xxxxxxxx   v0 = 0   new/unknown
+#    90  pc = 55  pcaddr = 000000dc  instr = xxxxxxxx   v0 = 0   new/unknown
+#    91  pc = 56  pcaddr = 000000e0  instr = xxxxxxxx   v0 = 0   new/unknown
+#    92  pc = 57  pcaddr = 000000e4  instr = xxxxxxxx   v0 = 0   new/unknown
+#    93  pc = 58  pcaddr = 000000e8  instr = xxxxxxxx   v0 = 0   new/unknown
+#    94  pc = 59  pcaddr = 000000ec  instr = xxxxxxxx   v0 = 0   new/unknown
+#    95  pc = 60  pcaddr = 000000f0  instr = xxxxxxxx   v0 = 0   new/unknown
+#    96  pc = 61  pcaddr = 000000f4  instr = xxxxxxxx   v0 = 0   new/unknown
+#    97  pc = 62  pcaddr = 000000f8  instr = xxxxxxxx   v0 = 0   new/unknown
+#    98  pc = 63  pcaddr = 000000fc  instr = xxxxxxxx   v0 = 0   new/unknown
+#    99  pc = 64  pcaddr = 00000100  instr = xxxxxxxx   v0 = 0   new/unknown
+#   100  pc = 65  pcaddr = 00000104  instr = xxxxxxxx   v0 = 0   new/unknown
+#   101  pc = 66  pcaddr = 00000108  instr = xxxxxxxx   v0 = 0   new/unknown
+#   102  pc = 67  pcaddr = 0000010c  instr = xxxxxxxx   v0 = 0   new/unknown
+#   103  pc = 68  pcaddr = 00000110  instr = xxxxxxxx   v0 = 0   new/unknown
+#   104  pc = 69  pcaddr = 00000114  instr = xxxxxxxx   v0 = 0   new/unknown
+#   105  pc = 70  pcaddr = 00000118  instr = xxxxxxxx   v0 = 0   new/unknown
+#   106  pc = 71  pcaddr = 0000011c  instr = xxxxxxxx   v0 = 0   new/unknown
+#   107  pc = 72  pcaddr = 00000120  instr = xxxxxxxx   v0 = 0   new/unknown
+#   108  pc = 73  pcaddr = 00000124  instr = xxxxxxxx   v0 = 0   new/unknown
+#   109  pc = 74  pcaddr = 00000128  instr = xxxxxxxx   v0 = 0   new/unknown
+#   110  pc = 75  pcaddr = 0000012c  instr = xxxxxxxx   v0 = 0   new/unknown
+#   111  pc = 76  pcaddr = 00000130  instr = xxxxxxxx   v0 = 0   new/unknown
+#   112  pc = 77  pcaddr = 00000134  instr = xxxxxxxx   v0 = 0   new/unknown
+#   113  pc = 78  pcaddr = 00000138  instr = xxxxxxxx   v0 = 0   new/unknown
+#   114  pc = 79  pcaddr = 0000013c  instr = xxxxxxxx   v0 = 0   new/unknown
+#   115  pc = 80  pcaddr = 00000140  instr = xxxxxxxx   v0 = 0   new/unknown
+#   116  pc = 81  pcaddr = 00000144  instr = xxxxxxxx   v0 = 0   new/unknown
+#   117  pc = 82  pcaddr = 00000148  instr = xxxxxxxx   v0 = 0   new/unknown
+#   118  pc = 83  pcaddr = 0000014c  instr = xxxxxxxx   v0 = 0   new/unknown
+#   119  pc = 84  pcaddr = 00000150  instr = xxxxxxxx   v0 = 0   new/unknown
+#   120  pc = 85  pcaddr = 00000154  instr = xxxxxxxx   v0 = 0   new/unknown
+# Timeout
+# ** Note: $stop    : ../../../testbench/testbench.v(137)
+#    Time: 2410 ns  Iteration: 1  Instance: /sm_testbench
+# Break in Module sm_testbench at ../../../testbench/testbench.v line 137
+# 0 ps
+# 2530500 ps
+# End time: 16:19:23 on Oct 15,2017, Elapsed time: 0:01:28
+# Errors: 0, Warnings: 0
